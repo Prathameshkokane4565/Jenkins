@@ -6,3 +6,35 @@ echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt update
 sudo apt install jenkins
+
+# Sample pipline
+pipeline {
+    agent any
+    tools {
+        maven 'maven'
+    }
+    
+    stages{
+        stage('code-pull'){
+            steps {
+                git branch: 'main', url: 'https://github.com/abhipraydhoble/Project-InsureMe.git'
+            }
+        }
+        
+        stage('code-build'){
+            steps{
+                sh "mvn clean package"
+            }
+        }
+
+        stage('code-deploy'){
+            steps{
+                sh "docker build -t insureme ."
+                sh "docker run -itd --name mycont -p 8089:8081 insureme"
+            }
+        }
+
+    }
+}
+
+      
