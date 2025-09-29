@@ -16,7 +16,7 @@ pipeline {
     stages{
         stage('code-pull'){
             steps {
-                git branch: 'main', url: 'https://github.com/abhipraydhoble/Project-InsureMe.git'
+                git branch: 'main', url: 'https://github.com/Prathameshkokane4565/Project-InsureMe.git'
             }
         }
         stage('code-build'){
