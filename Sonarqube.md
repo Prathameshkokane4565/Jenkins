@@ -13,3 +13,8 @@ Switch to root user and create a new user sonarqube:
 ```http
 sudo adduser sonarqube
 ```
+#### > Step 4: Download and Extract SonarQube
+Switch to sonarqube user:
+```http
+su - sonarqube
+```
