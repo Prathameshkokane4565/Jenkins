@@ -18,3 +18,20 @@ Switch to sonarqube user:
 ```http
 su - sonarqube
 ```
+Download SonarQube:
+```http
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
+unzip sonarqube-9.4.0.54424.zip
+```
+#### > Step 5: Set Permissions
+Switch back to root user:
+```http
+sudo chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
+sudo chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
+```
+#### >  Step 6: Start SonarQube
+Switch to sonarqube user:
+```http
+su - sonarqube
+cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+```
