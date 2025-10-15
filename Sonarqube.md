@@ -45,4 +45,4 @@ http://<your-server-ip>:9000
 
 - Username: admin
 - Password: admin
-# =SonarQube is ready
+# = SonarQube is ready
