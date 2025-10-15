@@ -34,4 +34,14 @@ Switch to sonarqube user:
 ```http
 su - sonarqube
 cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+./sonar.sh start
 ```
+#### Access SonarQube
+Open your browser and go to:
+```http
+http://<your-server-ip>:9000
+```
+# Default credentials:
+
+Username: admin
+Password: admin
