@@ -43,5 +43,5 @@ http://<your-server-ip>:9000
 ```
 # Default credentials:
 
-## Username: admin
-## Password: admin
+- Username: admin
+- Password: admin
