@@ -1,5 +1,5 @@
-#Jenkins Installation 
- 
+# Jenkins Installation 
+ ```http
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
@@ -7,10 +7,11 @@ echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt update
 sudo apt install jenkins
+```
 
 
-#Sample Jenkins Pipeline Script
-
+# Sample Jenkins Pipeline Script
+```http
 pipeline {
     agent any
     tools {
@@ -39,3 +40,4 @@ pipeline {
 
     }
 }
+```
